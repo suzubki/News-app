@@ -1,0 +1,46 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+
+  .sectionLeftContent {
+
+
+    .leftImage {
+      // TODO: Cambiar el tamaño, eliminar los px
+      width: 746px;
+      height: 378px;
+      background-color: #f5f5f5;
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .leftDescriptionContent {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .sectionRigthContent {
+    display: flex;
+    flex-direction: column;
+
+    .boxContent {
+      display: flex;
+      flex-direction: row;
+
+      .rigthImage {
+        width: 259px;
+        height: 180px;
+        background-color: #f5f5f5;
+      }
+
+      .rigthDescriptionContent {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+  }
+}
