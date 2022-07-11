@@ -26,11 +26,11 @@ export const Footer = () => {
         </ul>
       </div>
       <div className={styles.footerIcons}>
-        <Button leftIcon={linkedinIcon} size='medium' />
-        <Button leftIcon={facebookIcon} size='medium' />
-        <Button leftIcon={youtubeIcon} size='medium' />
-        <Button leftIcon={twitterIcon} size='medium' />
-        <Button leftIcon={instagramIcon} size='medium' />
+        <Button leftIcon={linkedinIcon} size='large' />
+        <Button leftIcon={facebookIcon} size='large' />
+        <Button leftIcon={youtubeIcon} size='large' />
+        <Button leftIcon={twitterIcon} size='large' />
+        <Button leftIcon={instagramIcon} size='large' />
       </div>
     </footer>
   )

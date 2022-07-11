@@ -4,7 +4,7 @@ import styles from './SecondSection.module.scss'
 export const SecondSection = () => {
   return (
     <>
-      <section className={`${styles.section} mx-6 mt-2`}>
+      <section className={`${styles.section} mx-6 mt-3`}>
         <div className={styles.sectionTopContent}>
           <div className={`${styles.recentlyPub} mr-2`}>
             <Text content='Publicado recientemente' size='large' />
@@ -17,7 +17,7 @@ export const SecondSection = () => {
             <Text content='Tecnología' />
           </div>
         </div>
-        <div className={styles.sectionBottomContent}>
+        <div className={`${styles.sectionBottomContent} mt-2`}>
           <div className={styles.leftContent}>
             <div className={styles.leftImageWithDescription}>
               {/* Proximamente un NextImage */}

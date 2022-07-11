@@ -5,17 +5,19 @@
   .sectionTopContent {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .sectionBottomContent {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 
     .leftWrapperDocumentsContent {
 
       .leftDocumentContent {
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         .leftImageExtraDocument {
           //TODO: Eliminar los px
@@ -23,19 +25,30 @@
           height: 304px;
           background-color: antiquewhite;
         }
+
+        .leftExtraDocumentDescription {
+          text-align: center;
+        }
       }
     }
 
     .centerWrapperDocumentContent {
 
       .centerDocumentContent {
-        display: flex;
-        flex-direction: column;
+
+        .centerDocumentDescription {
+          width: 90%;
+          margin: 0 auto;
+          text-align: center;
+        }
 
         .centerImageExtraDocument {
           //TODO: Eliminar los px
           width: 619px;
           height: 564px;
+          margin-left: auto;
+          margin-right: auto;
+
           background-color: antiquewhite;
         }
       }
@@ -46,12 +59,17 @@
       .rightDocumentContent {
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         .rightImageExtraDocument {
           //TODO: Eliminar los px
           width: 271px;
           height: 304px;
           background-color: antiquewhite;
+        }
+
+        .rightExtraDocumentDescription {
+          text-align: center;
         }
       }
     }
