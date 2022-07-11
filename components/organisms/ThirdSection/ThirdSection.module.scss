@@ -1,0 +1,60 @@
+.section {
+  display: flex;
+  flex-direction: column;
+
+  .sectionTopContent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sectionBottomContent {
+    display: flex;
+    gap: 1rem;
+
+    .leftWrapperDocumentsContent {
+
+      .leftDocumentContent {
+        display: flex;
+        flex-direction: column;
+
+        .leftImageExtraDocument {
+          //TODO: Eliminar los px
+          width: 271px;
+          height: 304px;
+          background-color: antiquewhite;
+        }
+      }
+    }
+
+    .centerWrapperDocumentContent {
+
+      .centerDocumentContent {
+        display: flex;
+        flex-direction: column;
+
+        .centerImageExtraDocument {
+          //TODO: Eliminar los px
+          width: 619px;
+          height: 564px;
+          background-color: antiquewhite;
+        }
+      }
+    }
+
+    .rightWrapperDocumentsContent {
+
+      .rightDocumentContent {
+        display: flex;
+        flex-direction: column;
+
+        .rightImageExtraDocument {
+          //TODO: Eliminar los px
+          width: 271px;
+          height: 304px;
+          background-color: antiquewhite;
+        }
+      }
+    }
+
+  }
+}

@@ -1,11 +1,17 @@
 import type { NextPage } from 'next'
-import { FirstSection } from '../components/organisms'
+import {
+  // FirstSection,
+  // SecondSection,
+  ThirdSection,
+} from '../components/organisms'
 import { NewsLayout } from '../components/templates'
 
 const Home: NextPage = () => {
   return (
     <NewsLayout>
-      <FirstSection />
+      {/* <FirstSection /> */}
+      {/* <SecondSection /> */}
+      <ThirdSection />
     </NewsLayout>
   )
 }
