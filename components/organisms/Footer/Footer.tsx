@@ -1,9 +1,9 @@
 import {
-  facebookIcon,
-  instagramIcon,
-  linkedinIcon,
-  twitterIcon,
-  youtubeIcon,
+  FacebookIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  TwitterIcon,
+  YoutubeIcon,
 } from '../../../assets'
 import { Button, Text } from '../../atoms'
 
@@ -11,7 +11,7 @@ import styles from './Footer.module.scss'
 
 export const Footer = () => {
   return (
-    <footer className={`${styles.footer} m-3`}>
+    <footer className={`${styles.footer} p-3`}>
       <div className={styles.descriptionPage}>
         <Text content='Título de la página' size='medium' />
         <Text content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum semper ipsum eget bibendum aenean quis. Quis pellentesque tempus augue viverra tincidunt. Ac non, aliquam, nullam quam et egestas. Suspendisse magnis nam adipiscing ut sit netus nunc imperdiet. ' />
@@ -26,11 +26,11 @@ export const Footer = () => {
         </ul>
       </div>
       <div className={styles.footerIcons}>
-        <Button leftIcon={linkedinIcon} size='large' />
-        <Button leftIcon={facebookIcon} size='large' />
-        <Button leftIcon={youtubeIcon} size='large' />
-        <Button leftIcon={twitterIcon} size='large' />
-        <Button leftIcon={instagramIcon} size='large' />
+        <Button LeftIcon={LinkedinIcon} size='large' />
+        <Button LeftIcon={FacebookIcon} size='large' />
+        <Button LeftIcon={YoutubeIcon} size='large' />
+        <Button LeftIcon={TwitterIcon} size='large' />
+        <Button LeftIcon={InstagramIcon} size='large' />
       </div>
     </footer>
   )

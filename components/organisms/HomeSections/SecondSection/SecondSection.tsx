@@ -1,4 +1,4 @@
-import { Text } from '../../atoms'
+import { Text } from '../../../atoms'
 import styles from './SecondSection.module.scss'
 
 export const SecondSection = () => {
@@ -6,15 +6,23 @@ export const SecondSection = () => {
     <>
       <section className={`${styles.section} mx-6 mt-3`}>
         <div className={styles.sectionTopContent}>
-          <div className={`${styles.recentlyPub} mr-2`}>
+          <div className='mr-2 my-auto'>
             <Text content='Publicado recientemente' size='large' />
           </div>
           <div className={styles.lineSpace}></div>
           <div className={`${styles.aboutDocs} ml-2`}>
-            <Text content='Todo' />
-            <Text content='Artículos' />
-            <Text content='Noticias' />
-            <Text content='Tecnología' />
+            <div className={`${styles.sectionDocActive}`}>
+              <Text content='Todo' bold />
+            </div>
+            <div>
+              <Text content='Noticias' bold />
+            </div>
+            <div>
+              <Text content='Tecnología' bold />
+            </div>
+            <div>
+              <Text content='Artículos' bold />
+            </div>
           </div>
         </div>
         <div className={`${styles.sectionBottomContent} mt-2`}>
@@ -30,12 +38,16 @@ export const SecondSection = () => {
               <div
                 className={`${styles.leftExtraDocumentDescription} ml-1 my-2`}
               >
-                <Text content='Categoría' />
+                <Text content='Categoría' color='red' />
                 <Text
                   content='Lorem ipsum dolor sit amet, consectetur adispicing elit.'
                   bold
                 />
-                <Text content='Por Darwin Narro' />
+                <Text
+                  content='Por Darwin Narro'
+                  color='gray'
+                  size='extraSmall'
+                />
               </div>
             </div>
 
@@ -46,12 +58,16 @@ export const SecondSection = () => {
               <div
                 className={`${styles.leftExtraDocumentDescription} ml-1 my-2`}
               >
-                <Text content='Categoría' />
+                <Text content='Categoría' color='red' />
                 <Text
                   content='Lorem ipsum dolor sit amet, consectetur adispicing elit.'
                   bold
                 />
-                <Text content='Por Darwin Narro' />
+                <Text
+                  content='Por Darwin Narro'
+                  color='gray'
+                  size='extraSmall'
+                />
               </div>
             </div>
           </div>
@@ -69,12 +85,16 @@ export const SecondSection = () => {
               <div
                 className={`${styles.rightExtraDocumentDescription} ml-1 my-2`}
               >
-                <Text content='Categoría' />
+                <Text content='Categoría' color='red' />
                 <Text
                   content='Lorem ipsum dolor sit amet, consectetur adispicing elit.'
                   bold
                 />
-                <Text content='Por Darwin Narro' />
+                <Text
+                  content='Por Darwin Narro'
+                  color='gray'
+                  size='extraSmall'
+                />
               </div>
             </div>
 
@@ -85,12 +105,16 @@ export const SecondSection = () => {
               <div
                 className={`${styles.rightExtraDocumentDescription} ml-1 my-2`}
               >
-                <Text content='Categoría' />
+                <Text content='Categoría' color='red' />
                 <Text
                   content='Lorem ipsum dolor sit amet, consectetur adispicing elit.'
                   bold
                 />
-                <Text content='Por Darwin Narro' />
+                <Text
+                  content='Por Darwin Narro'
+                  color='gray'
+                  size='extraSmall'
+                />
               </div>
             </div>
           </div>

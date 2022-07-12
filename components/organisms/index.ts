@@ -1,6 +1,9 @@
+// NewsLayout
 export * from './Navbar'
 export * from './Footer'
+export * from './LeftIcons'
 
-export * from './FirstSection'
-export * from './SecondSection'
-export * from './ThirdSection'
+// Sections of Home Page
+export * from './HomeSections/FirstSection'
+export * from './HomeSections/SecondSection'
+export * from './HomeSections/ThirdSection'

@@ -1,32 +1,21 @@
-import Image from 'next/image'
-
 type Props = {
   text?: string
-  leftIcon?: any
-  rightIcon?: any
-  size?: 'small' | 'medium' | 'large'
+  LeftIcon?: any
+  RightIcon?: any
+  size?: 'small' | 'medium' | 'large' | 'extraLarge'
 }
 
-export const Button = ({ text, leftIcon, rightIcon, size }: Props) => {
-  const getSize = () => {
-    if (size === 'small') {
-      return 16
-    }
-    if (size === 'medium') {
-      return 20
-    }
-    if (size === 'large') {
-      return 24
-    }
-  }
-
+export const Button = ({
+  text = '',
+  LeftIcon,
+  RightIcon,
+  size = 'small',
+}: Props) => {
   return (
     <button>
-      {leftIcon && size && (
-        <Image src={leftIcon} width={getSize()} height={getSize()} />
-      )}
-      {text || ''}
-      {rightIcon && size && <Image src={rightIcon} />}
+      {text}
+      {LeftIcon && <LeftIcon className={`icon-${size}`} />}
+      {RightIcon && <RightIcon className={`icon-${size}`} />}
     </button>
   )
 }

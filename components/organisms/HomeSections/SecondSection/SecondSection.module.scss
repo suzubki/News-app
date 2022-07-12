@@ -17,6 +17,13 @@
       display: flex;
       gap: 1rem;
       align-items: center;
+
+      .sectionDocActive {
+        padding: 1rem;
+        border-radius: 12px;
+        background-color: #5B9AF9;
+        color: aliceblue;
+      }
     }
   }
 
