@@ -1,14 +1,20 @@
+import Link from 'next/link'
 import { Text } from '../../../atoms'
+import { Section } from '../../../organisms'
 import styles from './ThirdSection.module.scss'
 
 export const ThirdSection = () => {
   return (
-    <section className={`${styles.section} mt-3 mx-6`}>
+    <Section column>
       <div className={styles.sectionTopContent}>
         <Text content='Artículos' size='large' />
-        <div className={styles.seeMoreArticles}>
-          <Text content='Ver más' size='small' bold />
-        </div>
+        <Link href='/articulos'>
+          <a>
+            <div className={styles.seeMoreArticles}>
+              <Text content='Ver más' size='small' bold />
+            </div>
+          </a>
+        </Link>
       </div>
       <div className={`${styles.sectionBottomContent} mt-2`}>
         <div className={styles.leftWrapperDocumentsContent}>
@@ -67,6 +73,6 @@ export const ThirdSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   )
 }

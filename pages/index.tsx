@@ -4,15 +4,15 @@ import {
   SecondSection,
   ThirdSection,
 } from '../components/organisms'
-import { NewsLayout } from '../components/templates'
+import { MainLayout } from '../components/templates'
 
 const Home: NextPage = () => {
   return (
-    <NewsLayout>
+    <MainLayout>
       <FirstSection />
       <SecondSection />
       <ThirdSection />
-    </NewsLayout>
+    </MainLayout>
   )
 }
 

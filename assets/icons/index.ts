@@ -5,3 +5,6 @@ export { default as LinkedinIcon } from './linkedin.svg'
 export { default as TwitterIcon } from './twitter.svg'
 export { default as YoutubeIcon } from './youtube.svg'
 export { default as SearchOutlinedIcon } from './search-outlined.svg'
+
+export { default as DropdownIconBefore } from './dropdown-icon-before.svg'
+export { default as DropdownIconNext } from './dropdown-icon-next.svg'

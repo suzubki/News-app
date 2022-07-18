@@ -4,6 +4,8 @@ type Props = {
   size?: 'extraSmall' | 'small' | 'medium' | 'large'
   color?: 'main' | 'gray' | 'red'
   bold?: boolean
+
+  firstLetterUpperCase?: boolean
 }
 
 export const Text = ({

@@ -1,1 +1,1 @@
-export * from './NewsLayout'
+export * from './MainLayout'

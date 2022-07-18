@@ -21,6 +21,10 @@ class MyDocument extends Document {
             href='http://fonts.cdnfonts.com/css/proxima-nova-2'
             rel='stylesheet'
           />
+          <link
+            rel='stylesheet'
+            href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
+          />
         </Head>
         <body>
           <Main />

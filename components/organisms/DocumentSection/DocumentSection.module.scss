@@ -1,0 +1,100 @@
+.section {
+  display: flex;
+  justify-content: center;
+
+  .leftContent {
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    margin-right: 2rem;
+
+    .nameAndImageAboutDoc {
+
+      .leftImage {
+        width: 684px;
+        height: 600px;
+        background-color: antiquewhite;
+        margin-top: 1.2rem;
+      }
+
+      .whoPublishedAndShareDoc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .whoPublishedContent {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .rightIconsContainer {
+          display: flex;
+          gap: .5rem;
+
+          .rightTwitterIconContainer {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1DA1F2;
+            padding: .6rem;
+            border-radius: 12px;
+
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+          }
+
+          .rightInstagramIconContainer {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at 20% 140%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            padding: .6rem;
+            border-radius: 12px;
+
+
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+          }
+
+          .rightFacebookIconContainer {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #3b5998;
+            padding: .6rem;
+            border-radius: 12px;
+
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+
+    .descriptionAboutDoc::first-letter {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+
+  .rightContent {
+    flex: 1;
+
+    .adContent {
+      width: 300px;
+      height: 250px;
+      background-color: antiquewhite;
+    }
+  }
+}

@@ -5,7 +5,7 @@ type Props = {
   children: ReactNode
 }
 
-export const NewsLayout: FC<Props> = ({ children }) => {
+export const MainLayout: FC<Props> = ({ children }) => {
   return (
     <>
       <Navbar />

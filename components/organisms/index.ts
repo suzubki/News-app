@@ -7,3 +7,8 @@ export * from './LeftIcons'
 export * from './HomeSections/FirstSection'
 export * from './HomeSections/SecondSection'
 export * from './HomeSections/ThirdSection'
+
+// News | Articles content
+export * from './DocumentSection'
+
+export * from './Section'
