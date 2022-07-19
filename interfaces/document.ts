@@ -1,15 +1,13 @@
-export interface Document {
-  source: Source
+export interface IDocument {
+  slug: string
   author: string
+  category: string
   title: string
+  summary: string
   description: string
-  url: string
-  urlToImage: string
-  publishedAt: string
-  content: string
-}
 
-export interface Source {
-  id: null
-  name: string
+  subtitle?: string
+  bibliography?: [string]
+  references?: [string]
+  possible_main_content?: boolean
 }

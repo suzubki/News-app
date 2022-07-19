@@ -9,7 +9,7 @@ interface Props {
 
 export const Section: FC<Props> = ({ children, column = false }) => {
   return (
-    <section className={`${styles.section} mt-3`}>
+    <section className={`${styles.section} mt-2`}>
       <div
         className={`${styles.sectionContentContainer} ${
           column ? 'direction-column' : ''

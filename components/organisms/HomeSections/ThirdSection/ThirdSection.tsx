@@ -16,7 +16,7 @@ export const ThirdSection = () => {
           </a>
         </Link>
       </div>
-      <div className={`${styles.sectionBottomContent} mt-2`}>
+      <div className={`${styles.sectionBottomContent} mt-1`}>
         <div className={styles.leftWrapperDocumentsContent}>
           <div className={styles.leftDocumentContent}>
             <div className={styles.leftImageExtraDocument}></div>

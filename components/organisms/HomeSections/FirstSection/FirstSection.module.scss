@@ -1,4 +1,5 @@
 .sectionLeftContent {
+  flex: 3;
 
   .leftImage {
     // TODO: Cambiar el tamaño, eliminar los px
@@ -14,29 +15,40 @@
   .leftDescriptionContent {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: .2rem;
+
+    &>div {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 
 .sectionRigthContent {
+  flex: 2;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 
   .boxContent {
     display: flex;
     flex-direction: row;
+    // align-items: center;
 
     .rigthImage {
       // TODO: Cambiar el tamaño, eliminar los px
-      width: 259px;
+      // width: 259px;
       height: 180px;
+      flex: 1;
       background-color: #f5f5f5;
     }
 
     .rigthDescriptionContent {
+      flex: 1;
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: .4rem;
+      justify-content: center;
     }
   }
 

@@ -70,12 +70,12 @@ export const Navbar = () => {
                   <Text content='Artículos' size='medium' />
                 </a>
               </NextLink>
-              <NextLink href='/noticias'>
+              <NextLink href='/eventos'>
                 <a>
-                  <Text content='Noticias' size='medium' />
+                  <Text content='Eventos' size='medium' />
                 </a>
               </NextLink>
-              <NextLink href='/doxa'>
+              <NextLink href='/categorias/doxa'>
                 <a>
                   <Text content='Doxa' size='medium' />
                 </a>
