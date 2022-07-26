@@ -3,14 +3,11 @@ import NextLink from 'next/link'
 
 import { UIContext } from '../../../context'
 import { Text, Button } from '../../atoms'
-import {
-  DropdownIconBefore,
-  DropdownIconNext,
-  MenuHamburgerIcon,
-  SearchOutlinedIcon,
-} from '../../../assets'
+import { MenuHamburgerIcon, SearchOutlinedIcon } from '../../../assets'
 
 import styles from './Navbar.module.scss'
+import data from '../../../database/seed-data'
+import { Carousel } from '../Carousel'
 
 export const Navbar = () => {
   const {
@@ -130,48 +127,35 @@ export const Navbar = () => {
               {/* ----- */}
               <div className={styles.dropdownContentContainer}>
                 <div className={styles.dropdownContentLeftItems}>
-                  <Text content='Ciencia Política' bold />
-                  <Text content='Derecho' bold />
-                  <Text content='Economía' bold />
-                  <Text content='Filosofía' bold />
-                  <Text content='Sociología' bold />
+                  <NextLink href='/articulos/ciencia-politica' passHref>
+                    <a>
+                      <Text content='Ciencia Política' bold />
+                    </a>
+                  </NextLink>
+                  <NextLink href='/articulos/derecho' passHref>
+                    <a>
+                      <Text content='Derecho' bold />
+                    </a>
+                  </NextLink>
+                  <NextLink href='/articulos/economia' passHref>
+                    <a>
+                      <Text content='Economía' bold />
+                    </a>
+                  </NextLink>
+                  <NextLink href='/articulos/filosofia' passHref>
+                    <a>
+                      <Text content='Filosofía' bold />
+                    </a>
+                  </NextLink>
+                  <NextLink href='/articulos/sociologia' passHref>
+                    <a>
+                      <Text content='Sociología' bold />
+                    </a>
+                  </NextLink>
                 </div>
                 <div className={styles.dropdownContentRightItems}>
                   <div className={`${styles.dropdownContainerRight}`}>
-                    <div className={styles.dropdownIconBefore}>
-                      <Button LeftIcon={DropdownIconBefore} size='large' />
-                    </div>
-                    <div className={styles.dropdownDocumentContainer}>
-                      <div className={styles.dropdownImage}></div>
-                      <div className={styles.dropdownDocumentDescription}>
-                        <Text
-                          content='Categoría'
-                          color='red'
-                          size='extraSmall'
-                        />
-                        <Text
-                          content='Lorem ipsum dolor sit amet, consectetur adispicing elit'
-                          size='extraSmall'
-                        />
-                      </div>
-                    </div>
-                    <div className={styles.dropdownDocumentContainer}>
-                      <div className={styles.dropdownImage}></div>
-                      <div className={styles.dropdownDocumentDescription}>
-                        <Text
-                          content='Categoría'
-                          size='extraSmall'
-                          color='red'
-                        />
-                        <Text
-                          content='Lorem ipsum dolor sit amet, consectetur adispicing elit'
-                          size='extraSmall'
-                        />
-                      </div>
-                    </div>
-                    <div className={styles.dropdownIconNext}>
-                      <Button LeftIcon={DropdownIconNext} size='large' />
-                    </div>
+                    <Carousel data={data} />
                   </div>
                 </div>
               </div>

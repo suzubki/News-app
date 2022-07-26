@@ -20,7 +20,11 @@ export const Text = ({
   if (size === 'large') return <h1>{content}</h1>
   if (size === 'extraSmall')
     return (
-      <span className={`text-${size} color-${color} align-${align}`}>
+      <span
+        className={`text-${size} color-${color} align-${align} ${
+          bold && 'weight-light'
+        }`}
+      >
         {content}
       </span>
     )

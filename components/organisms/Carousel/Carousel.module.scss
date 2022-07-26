@@ -1,0 +1,45 @@
+.emblaViewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.emblaViewport.is-draggable {
+  cursor: move;
+  cursor: grab;
+}
+
+.emblaViewport.is-dragging {
+  cursor: grabbing;
+}
+
+.embla {
+  display: flex;
+  position: relative;
+  padding: 20px;
+}
+
+.emblaContainer {
+  display: flex;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  margin-left: -10px;
+}
+
+.emblaSlide {
+  position: relative;
+  padding-left: 10px;
+
+  flex: 0 0 100%;
+}
+
+.emblaSlideInner {
+  position: relative;
+  overflow: hidden;
+}
+
+.emblaSlideImage {
+  height: 180px;
+  background-color: aliceblue;
+}

@@ -73,7 +73,12 @@ export const SecondSection = () => {
           {dataToShow.map((document) => (
             <Link href='/articulos' key={`documentosExtras-${document.slug}`}>
               <a>
-                <div className={styles.extraDocumentContent}>
+                <div
+                  className={
+                    styles.extraDocumentContent +
+                    ' animate__animated animate__fadeIn'
+                  }
+                >
                   <div className={styles.imageExtraDocument}></div>
                   <div
                     className={`${styles.extraDocumentDescription} ml-1 my-2`}
