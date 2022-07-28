@@ -15,7 +15,9 @@ interface Props {
 }
 
 export const Carousel: FC<Props> = ({ data }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel()
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    align: 'start',
+  })
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev()
