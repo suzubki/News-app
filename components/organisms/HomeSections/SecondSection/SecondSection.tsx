@@ -33,7 +33,10 @@ export const SecondSection = () => {
             }`}
             onClick={() => setSectionClicked('Todo')}
           >
-            <Text content='Todo' bold />
+            <Text
+              content='Todo'
+              color={`${sectionClicked === 'Todo' ? 'lightWhite' : 'main'}`}
+            />
           </div>
           <div
             className={`${
@@ -43,7 +46,12 @@ export const SecondSection = () => {
             }`}
             onClick={() => setSectionClicked('Sociologia')}
           >
-            <Text content='Sociologia' bold />
+            <Text
+              content='Sociología'
+              color={`${
+                sectionClicked === 'Sociologia' ? 'lightWhite' : 'main'
+              }`}
+            />
           </div>
           <div
             className={`${
@@ -53,7 +61,12 @@ export const SecondSection = () => {
             }`}
             onClick={() => setSectionClicked('Tecnologia')}
           >
-            <Text content='Tecnología' bold />
+            <Text
+              content='Tecnología'
+              color={`${
+                sectionClicked === 'Tecnologia' ? 'lightWhite' : 'main'
+              }`}
+            />
           </div>
           <div
             className={`${
@@ -63,7 +76,10 @@ export const SecondSection = () => {
             }`}
             onClick={() => setSectionClicked('Derecho')}
           >
-            <Text content='Derecho' bold />
+            <Text
+              content='Derecho'
+              color={`${sectionClicked === 'Derecho' ? 'lightWhite' : 'main'}`}
+            />
           </div>
         </div>
       </div>

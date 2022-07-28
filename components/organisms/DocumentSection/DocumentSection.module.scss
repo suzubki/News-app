@@ -14,11 +14,18 @@
 
     .nameAndImageAboutDoc {
 
+      .subtitleAndDescriptionAboutDoc {
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+      }
+
       .leftImage {
         width: 684px;
         height: 600px;
         background-color: antiquewhite;
-        margin-top: 1.2rem;
+        margin-top: .7rem;
+        margin-bottom: .5rem;
       }
 
       .whoPublishedAndShareDoc {

@@ -68,10 +68,11 @@ export const FirstSection = () => {
                     color='red'
                     size='extraSmall'
                   />
-                  <Text content={document.title} bold color='red' />
+                  <Text content={document.title} size='small' bold />
                   <Text
                     content={shrinkText(document.summary, 10)}
                     size='extraSmall'
+                    color='lightBlack'
                   />
                 </div>
               </div>

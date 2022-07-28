@@ -215,6 +215,10 @@ ul {
   height: 28px;
 }
 
+.text-specialSmall {
+  font-size: .9rem;
+}
+
 .text-extraSmall {
   font-size: .8rem;
 }
@@ -241,6 +245,14 @@ ul {
 
 .color-red {
   color: #EA7171
+}
+
+.color-lightBlack {
+  color: rgb(63, 63, 63)
+}
+
+.color-lightWhite {
+  color: aliceblue
 }
 
 .bg-bluelight {
@@ -279,4 +291,8 @@ ul {
   position: relative;
   min-width: 100%;
   padding-left: 10px;
+}
+
+.font-italic {
+  font-style: italic;
 }
