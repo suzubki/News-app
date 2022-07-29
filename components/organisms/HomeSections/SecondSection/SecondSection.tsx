@@ -87,7 +87,10 @@ export const SecondSection = () => {
       <div className={`${styles.sectionBottomContent} `}>
         <div className={styles.bottomContainer}>
           {dataToShow.map((document) => (
-            <Link href='/articulos' key={`documentosExtras-${document.slug}`}>
+            <Link
+              href={`/articulos/${document.slug}`}
+              key={`documentosExtras-${document.slug}`}
+            >
               <a>
                 <div
                   className={
