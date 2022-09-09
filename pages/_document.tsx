@@ -8,9 +8,9 @@ import Document, {
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
-    const initalProps = await Document.getInitialProps(ctx)
+    const initialProps = await Document.getInitialProps(ctx)
 
-    return initalProps
+    return initialProps
   }
 
   render() {
@@ -18,12 +18,16 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link
-            href='http://fonts.cdnfonts.com/css/proxima-nova-2'
+            href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
             rel='stylesheet'
           />
           <link
             rel='stylesheet'
-            href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
+            href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'
+          />
+          <link
+            href='http://fonts.cdnfonts.com/css/proxima-nova-2'
+            rel='stylesheet'
           />
         </Head>
         <body>

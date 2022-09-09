@@ -21,6 +21,7 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off',
     'no-use-before-define': 'off',
+    '@next/next/no-page-custom-font': 'off',
   },
   settings: {
     react: {

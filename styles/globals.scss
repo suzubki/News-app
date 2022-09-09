@@ -18,6 +18,7 @@ button {
 
   display: flex;
   align-items: center;
+  gap: 0.4rem;
 
   cursor: pointer;
 }
@@ -193,6 +194,10 @@ ul {
 
 .weight-light {
   font-weight: 500;
+}
+
+.weight-bold {
+  font-weight: bold;
 }
 
 .icon-small {

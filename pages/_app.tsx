@@ -1,13 +1,13 @@
-import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
-import { UIProvider } from '../context'
+import { AuthProvider } from '../context'
+
+import '../styles/globals.scss'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <UIProvider>
+    <AuthProvider>
       <Component {...pageProps} />
-    </UIProvider>
+    </AuthProvider>
   )
 }
-
 export default MyApp

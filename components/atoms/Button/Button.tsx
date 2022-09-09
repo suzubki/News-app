@@ -13,8 +13,8 @@ export const Button = ({
 }: Props) => {
   return (
     <button>
-      {text}
       {LeftIcon && <LeftIcon className={`icon-${size}`} />}
+      {text}
       {RightIcon && <RightIcon className={`icon-${size}`} />}
     </button>
   )

@@ -1,8 +1,9 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 
-import { MainLayout, DocumentSection } from '../../components'
+import { DocumentSection } from '../../components'
 
 import { dbArticles } from '../../database'
+import { MainLayout } from '../../layouts'
 import { IDocument } from '../../interfaces'
 
 interface Props {

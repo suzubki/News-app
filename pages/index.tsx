@@ -2,16 +2,16 @@ import type { NextPage } from 'next'
 import {
   FirstSection,
   SecondSection,
-  ThirdSection,
+  // ThirdSection,
 } from '../components/organisms'
-import { MainLayout } from '../components/templates'
+import { MainLayout } from '../layouts'
 
 const Home: NextPage = () => {
   return (
     <MainLayout>
       <FirstSection />
       <SecondSection />
-      <ThirdSection />
+      {/* <ThirdSection /> */}
     </MainLayout>
   )
 }
